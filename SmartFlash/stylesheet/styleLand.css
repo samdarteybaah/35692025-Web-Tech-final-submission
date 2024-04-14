@@ -1,0 +1,168 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #dedcff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 2.2rem;
+    color: #2f27ce;
+}
+
+#top_link a{
+    color: black;
+    padding-bottom: 0;
+    padding: 6px;
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+
+#top_link a:hover {
+    background-color: #5b52ff;
+}
+
+section{
+    background-color: #050315;
+    color: #dedcff;
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wrapper{
+    display: inline-flex;
+}
+
+.first_text{
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.wrapper .dynamic{
+    margin-left: 15px;
+    line-height: 80px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.dynamic li{
+    list-style: none;
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite; 
+}
+
+@keyframes slide {
+    100%{
+        top: -340px;
+    }
+    
+}
+
+.dynamic li span{
+    position: relative;
+}
+
+.dynamic li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #050315;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #dedcff;
+    animation: typing 1.5s steps(15) infinite; 
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0,-35px 0 35px;
+    }
+    
+}
+
+#message{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #dedcff;
+}
+.low{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #dedcff;
+}
+
+#message p{
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+
+#register2 {
+    display: inline-block;
+    background-color: #433bff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#register2 a{
+    color: #000;
+}
+
+#register2 a:hover{
+    background-color: #5b52ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+footer {
+    background-color: #050315;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+}

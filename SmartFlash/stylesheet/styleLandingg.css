@@ -1,0 +1,180 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #dedcff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #2f27ce;
+}
+
+#top_link {
+    
+    display: flex;
+}
+
+#top_link span {
+    margin-right: 20px;
+}
+
+#top_link a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#top_link a:hover {
+    background-color: #555;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#landing_message {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#landing_message .wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+}
+
+#landing_message .text {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#landing_message .first_text {
+    position: relative;
+    top: 0;
+}
+
+#landing_message .second {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#landing_message .third {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#landing_message .fourth {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#landing_message .fifth {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#landing_message .wrapper:hover .text {
+    opacity: 1;
+}
+
+#landing_message .wrapper:hover .first_text {
+    animation: slide-in 0.3s forwards;
+}
+
+#landing_message .wrapper:hover .second {
+    animation: slide-in 0.3s 0.3s forwards;
+}
+
+#landing_message .wrapper:hover .third {
+    animation: slide-in 0.3s 0.6s forwards;
+}
+
+#landing_message .wrapper:hover .fourth {
+    animation: slide-in 0.3s 0.9s forwards;
+}
+
+#landing_message .wrapper:hover .fifth {
+    animation: slide-in 0.3s 1.2s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+main img {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+#register2 {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#register2:hover {
+    background-color: #555;
+}
+
+#message {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}

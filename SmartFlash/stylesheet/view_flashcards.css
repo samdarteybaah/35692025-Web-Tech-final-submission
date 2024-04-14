@@ -1,0 +1,135 @@
+
+  
+  .logo{
+    margin-left: 20px;
+    color: #2f27ce;
+  }
+  
+  header{
+    background-color: #dedcff;
+    margin-bottom: 0;
+    padding-bottom: 7px;
+    padding-top: 5px;
+  }
+  
+a{
+    text-decoration: none;
+}
+
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.flashcard-set-info {
+    /* background-color: #f1f1f1; */
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+}
+
+.flashcard-set-title {
+    margin: 0;
+}
+
+.flashcard-set-description {
+    color: #666;
+    margin: 0;
+}
+
+.flashcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.flashcard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px;
+    perspective: 1000px;
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.flashcard:active {
+    transform: translateY(4px);
+}
+
+.flashcard-question,
+.flashcard-answer {
+    backface-visibility: hidden;
+    border-radius: 5px;
+    bottom: 0;
+    color: #333;
+    font-size: 18px;
+    left: 0;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease;
+}
+
+.flashcard-question {
+    background-color: #7889EF;
+    border-bottom: 1px solid #ddd;
+    transform: rotateX(0deg) translateY(0px);
+    z-index: 2;
+}
+
+.flashcard-answer {
+    background-color: #ddd;
+    border-top: 1px solid #ddd;
+    transform: rotateX(-180deg) translateY(0px);
+}
+
+.flashcard.flipped .flashcard-question {
+    transform: rotateX(-180deg) translateY(0px);
+}
+
+.flashcard.flipped .flashcard-answer {
+    transform: rotateX(0deg) translateY(0px);
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .links a {
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    background-color: #444;
+  }
+  
+  .edit-button {
+    background-color: #4caf50;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+  }
+  
+  .add-flashcard-button {
+    background-color: #008cba;
+  }

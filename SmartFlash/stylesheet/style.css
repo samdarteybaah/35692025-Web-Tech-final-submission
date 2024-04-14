@@ -1,0 +1,142 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo{
+  margin-left: 20px;
+  color: #2f27ce;
+}
+
+header{
+  background-color: #dedcff;
+  margin-bottom: 0;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+
+body {
+  line-height: 1.6;
+}
+  
+a{
+    text-decoration: none;
+    color: #333;
+}
+  
+.container {
+    display: flex;
+    height: 100vh;
+}
+  
+.sidebar {
+  background-color: linear-gradient(to top, #050315, #433bff);
+    color: #fff;
+    width: 200px;
+    padding: 20px;
+}
+  
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+  .sidebar-header img {
+    width: 150px;
+    height: auto;
+}
+  
+  .sidebar-nav {
+    list-style: none;
+}
+  
+  .sidebar-nav li {
+    margin-bottom: 10px;
+}
+  
+  .sidebar-nav a {
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+  
+.sidebar-nav a:hover {
+    background-color: #5b52ff;
+}
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+  
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+  
+  .stat {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+}
+  
+  .stat h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .stat p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .lower_list{
+    margin-top: 250px;
+  }
+
+.lower_list a{
+  color: red;
+}
+
+.create-flashset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: #403d8b;
+  color: #fff;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-left: 20px;
+  padding-left: 4px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flashcard {
+  margin-bottom: 1em;
+}
+
+#flashcard-container {
+  margin-top: 1em;
+}
+
+#add-flashcard {
+  margin-right: 1em;
+}
+
